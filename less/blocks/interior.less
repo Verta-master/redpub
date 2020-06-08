@@ -1,0 +1,42 @@
+.interior {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  background-color: #fff5ec;
+  
+  .deco {
+    transform: scaleX(-1);
+  }
+  
+  .deco-bottom {
+    transform: rotate(180deg) scaleX(-1);
+  }
+}
+
+.interior__list {
+  .reset();
+  list-style: none;
+  display: flex;
+}
+
+.interior__item {
+  flex: 0 0 33.333333%;
+  padding: 0 15px;
+}
+
+.interior__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 #ffffff;
+  border-width: 5px;
+  border-color: #542a00;
+  border-style: double;
+  padding: 5px 5px 5px 5px;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+  }
+}

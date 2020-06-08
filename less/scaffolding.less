@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #ffebc3;
 }
 
 .footer {
@@ -79,11 +80,27 @@ button {
 
 h1, h2,
 .title {
+  position: relative;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
   color: #784729;
   font-weight: 500;
   font-size: 35px;
   line-height: 35px;
   letter-spacing: 1px;
+  text-align: center;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 189px;
+    height: 9px;
+    background-image: url(../img/icons/bd-img1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
