@@ -21,6 +21,19 @@
   .reset();
   list-style: none;
   display: flex;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: -250px;
+    right: -400px;
+    width: 560px;
+    height: 601px;
+    background-image: url(../img/images/bmrfp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .bar__item {

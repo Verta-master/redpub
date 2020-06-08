@@ -1,0 +1,91 @@
+.event {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  .title span {
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: -350px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 310px;
+      height: 245px;
+      background-image: url(../img/images/sob_zyab.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.event__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.event__item {
+  width: 24%;
+  position: relative;
+}
+
+.event__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 97, 69, 0.5);
+    pointer-events: none;
+    opacity: 0;
+    .transition();
+  }
+  
+  &::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: rgb(255, 192, 67);
+    font-size: 28px;
+    border-radius: 50%;
+    background-color: #000;
+    pointer-events: none;
+    opacity: 0;
+    .transition();
+  }
+  
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 1;
+      .transition();
+    }
+  }
+}
