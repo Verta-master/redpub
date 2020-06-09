@@ -28,7 +28,8 @@
 
 //-------------------------------------
 @media (max-width: 1140px) {
-  .wrapper {
+  .wrapper,
+  .contacts__line .contacts__input {
     width: 100%;
   }
   .header {
@@ -47,6 +48,16 @@
   }
   .food__overlay::before {
     font-size: 100px;
+  }
+  .contacts__form-wrap {
+    width: 410px;
+    max-width: 100%;
+  }
+  .contacts__line {
+    display: block;
+  }
+  .contacts__input--name {
+    margin-bottom: 20px;
   }
 }
 
@@ -178,9 +189,31 @@
     transform: translate(-50%,-50%);
     font-size: 70px;
   }
+  .contacts__form-wrap,
   .footer__logo,
   .footer__block--logo {
     width: 100%;
+  }
+  .top {
+    margin-top: 50px;
+  }
+  .top__title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .contacts__img {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .contacts__info {
+    width: 100%;
+    position: static;
+  }
+  .contacts__btn {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
