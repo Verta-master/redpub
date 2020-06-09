@@ -32,10 +32,10 @@
     <div class="header__wrap">
       <div class="logo">
         <img src="img/images/rf-logo2.png" alt="Logo" class="logo__main">
-        <img src="img/images/moblogo.png" alt="Logo" class="logo__mobile">
+        <img src="img/images/rpf-logo.png" alt="Logo" class="logo__mobile">
       </div>
       <nav class="menu">
-        <button type="button" class="menu__btn"></button>
+        <button type="button" class="menu__btn"><i class="fa fa-bars"></i></button>
         <ul class="menu__list">
           <li class="menu__item">
             <a href="#" class="menu__link">Главная</a>
@@ -84,13 +84,11 @@
             <a href="https://wa.me/79261070327" class="promo__delivery">Доставка</a>
           </div>
           <div class="promo__block">
-            <p>
-              <b>Время работы:</b><br>
-              <span>Пт-Сб: 12:00 - 02:00</span><br>
-              <span>Вс-Чт: 12:00 - 00:00</span><br>
-              <b>E-mail:</b><br>
-              <a href="mailto:manager@redfinch.ru">manager@redfinch.ru</a>
-            </p>
+            <b>Время работы:</b><br>
+            <span>Пт-Сб: 12:00 - 02:00</span><br>
+            <span>Вс-Чт: 12:00 - 00:00</span><br>
+            <b>E-mail:</b><br>
+            <a href="mailto:manager@redfinch.ru">manager@redfinch.ru</a>
           </div>
         </div>
       </div>
@@ -342,6 +340,35 @@
   
   <a href="#top" class="btn-top" title="Наверх"><i class="fa fa-chevron-up"></i></a>
   
+  <nav class="mobile">
+    <button type="button" class="mobile__close">x</button>
+    <div class="mobile__wrap">
+      <div class="mobile__logo">
+        <img src="img/images/moblogo.png" alt="Logo">
+      </div>
+      <a data-fancybox data-src="#call" href="javascript:;" class="btn header__btn">Резерв стола</a>
+      <ul class="mobile__list">
+        <li class="mobile__item">
+          <a href="#" class="mobile__link">Главная</a>
+        </li>
+        <li class="mobile__item">
+          <a href="#" class="mobile__link">Меню</a>
+          <button type="button" class="mobile__plus"></button>
+          <ul class="mobile__sublist">
+            <li class="mobile__subitem"><a href="#">Основное меню</a></li>
+            <li class="mobile__subitem"><a href="#">Барная карта</a></li>
+            <li class="mobile__subitem"><a href="#">Пивная карта</a></li>
+            <li class="mobile__subitem"><a href="#">Морепродукты</a></li>
+            <li class="mobile__subitem"><a href="#">Напитки</a></li>
+          </ul>
+        </li>
+        <li class="mobile__item">
+          <a href="#" class="mobile__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
     <p class="modal__title">Зарезервировать столик</p>
@@ -410,6 +437,8 @@
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 </body>
