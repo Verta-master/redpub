@@ -29,10 +29,10 @@
 
   <header class="header">
     <div class="header__wrap">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <img src="img/images/rf-logo2.png" alt="Logo" class="logo__main">
         <img src="img/images/rpf-logo.png" alt="Logo" class="logo__mobile">
-      </div>
+      </a>
       <nav class="menu">
         <button type="button" class="menu__btn"><i class="fa fa-bars"></i></button>
         <ul class="menu__list">
@@ -49,7 +49,7 @@
               <li class="menu__subitem"><a href="#">Напитки</a></li>
             </ul>
           </li>
-          <li class="menu__item">
+          <li class="menu__item menu__item--active">
             <a href="#" class="menu__link">Контакты</a>
           </li>
         </ul>
@@ -72,234 +72,46 @@
   </header>
   
   <main id="top">
-    <section class="promo">
+    <div class="top">
       <div class="wrapper">
-        <div class="promo__wrap">
-          <div class="promo__block">
-            <b>Адрес:</b><br>
-            <address>г. Красногорск<br>ул. Циолковского, д.7</address>
-            <b>Бронирование:</b><br>
-            <a href="tel:+74951280700">+7 (495) 128-07-00</a>
-            <a href="https://wa.me/79261070327" class="promo__delivery">Доставка</a>
+        <nav class="breadcrumbs">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+          <span class="breadcrumbs__link">Контакты</span>
+        </nav>
+        <h1 class="top__title">Обратная связь</h1>
+      </div>
+    </div>
+    
+    <section class="contacts">
+      <div class="wrapper">
+        <p class="contacts__title">Вопросы, предложения?</p>
+        <p class="contacts__subtitle">Напишите нам!</p>
+        <div class="contacts__wrap">
+          <figure class="contacts__img">
+            <img src="img/images/contacts_bird.png" alt="Контакты">
+          </figure>
+          <div class="contacts__form-wrap">
+            <form action="#" class="contacts__form">
+              <div class="contacts__line">
+                <input type="text" class="contacts__input" placeholder="Ваше имя">
+                <input type="email" class="contacts__input" placeholder="E-mail">
+              </div>
+              <input type="text" class="contacts__input" placeholder="Тема сообщения">
+              <textarea class="contacts__message"></textarea>
+              <button type="submit" class="contacts__btn">Отправить</button>
+            </form>
           </div>
-          <div class="promo__block">
-            <b>Время работы:</b><br>
-            <span>Пт-Сб: 12:00 - 02:00</span><br>
-            <span>Вс-Чт: 12:00 - 00:00</span><br>
-            <b>E-mail:</b><br>
-            <a href="mailto:manager@redfinch.ru">manager@redfinch.ru</a>
+          <div class="contacts__info">
+            <address>МО, г. Красногорск<br>ул. Циолковского, д.7</address>
+            <a href="tel:+74951280700" class="contacts__link">+7 (495) 128-07-00</a>
+            <p>Пн-Чт: 12.00-00.00<br>Пт-Вс: 12.00-02.00</p>
+            <a href="mailto:manager@redfinch.ru" class="contacts__link">manager@redfinch.ru</a>
           </div>
         </div>
       </div>
-    </section>
-    
-    <section class="about">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 86.44" preserveAspectRatio="none" fill="#ffdea8" class="deco">
-        <use href="#shape-mono"></use>
-      </svg>
-      <div class="wrapper">
-        <div class="about__wrap">
-          <h1 class="title">О пабе RED FINCH</h1>
-          <p>RED FINCH PUB — двухэтажный особняк, ресторан-паб и терраса в Красногорске.<br>Меню ресторана очень многогранно.<br>На ваш выбор предлагаем попробовать авторские, средиземноморские, традиционные ирландские и блюда с мангала, а так же блюда из уникального раздела «Сегодня в меню».<br>Винная карта же представляет Италию, Испанию, Новую Зеландию и даже Болгарию.</p>
-        </div>
-      </div>
-    </section>
-    
-    <section class="interior">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 86.44" preserveAspectRatio="none" fill="#ffebc3" class="deco">
-        <use href="#shape-mono"></use>
-      </svg>
-      <div class="wrapper">
-        <h2 class="title">ИНТЕРЬЕР</h2>
-        <ul class="interior__list">
-          <li class="interior__item">
-            <a href="#" class="interior__link">
-              <img src="img/images/yellowz.jpg" alt="ИНТЕРЬЕР">
-            </a>
-          </li>
-          <li class="interior__item">
-            <a href="#" class="interior__link">
-              <img src="img/images/terras.jpg" alt="ИНТЕРЬЕР">
-            </a>
-          </li>
-          <li class="interior__item">
-            <a href="#" class="interior__link">
-              <img src="img/images/redz.jpg" alt="ИНТЕРЬЕР">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 86.44" preserveAspectRatio="none" fill="#ffebc3" class="deco-bottom">
-        <use href="#shape-mono"></use>
-      </svg>
-    </section>
-    
-    <section class="guest">
-      <div class="wrapper">
-        <div class="guest__wrap">
-          <h2 class="title">НАШИМ ГОСТЯМ</h2>
-          <p>Вы можете подобрать и заказать банкетный зал на свадьбу, корпоратив, день рождения или юбилей.<br>Выберите подходящую дату и время, а мы поможем составить вкусное и сытное меню.</p>
-          <p>Банкет от 1500р/чел.<br>Фуршет от 500р/чел.<br>Вместимость залов от 60 - 200 чел.</p>
-        </div>
-      </div>
-    </section>
-    
-    <section class="bar">
-      <h2 class="title">НАШЕ МЕНЮ</h2>
-      <div class="bar__wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 86.47" preserveAspectRatio="none" class="layers" fill="#ffebc3">
-          <use href="#shape-layers"></use>
-        </svg>
-        <div class="wrapper">
-          <ul class="bar__list">
-            <li class="bar__item">
-              <h3 class="title-3">ОСНОВНОЕ МЕНЮ</h3>
-              <p class="bar__point">
-                <span>"Цезарь" с курицей</span>
-                <i></i>
-                <b>390 руб.</b>
-              </p>
-              <p class="bar__point">
-                <span>Чесночные гренки</span>
-                <i></i>
-                <b>250 руб.</b>
-              </p>
-              <p class="bar__point">
-                <span>Уха по-царски</span>
-                <i></i>
-                <b>390 руб.</b>
-              </p>
-              <p class="bar__point">
-                <span>Шашлык из свинины</span>
-                <i></i>
-                <b>320 руб.</b>
-              </p>
-              <p class="bar__point">
-                <span>Овощи гриль</span>
-                <i></i>
-                <b>320 руб.</b>
-              </p>
-              <p class="bar__point">
-                <span>Крылья пивные</span>
-                <i></i>
-                <b>350 руб.</b>
-              </p>
-              <a href="#" class="btn bar__btn">ПОСМОТРЕТЬ МЕНЮ</a>
-            </li>
-            <li class="bar__item">
-              <h3 class="title-3">НАПИТКИ</h3>
-              <p class="bar__point">
-                <span>Разливное пиво</span>
-                <i></i>
-                <b>220 руб.</b>
-              </p>
-              <p class="bar__point">
-                <span>Сидр</span>
-                <i></i>
-                <b>200 руб.</b>
-              </p>
-              <p class="bar__point">
-                <span>Морс</span>
-                <i></i>
-                <b>300 руб.</b>
-              </p>
-              <p class="bar__point">
-                <span>Американо</span>
-                <i></i>
-                <b>140 руб.</b>
-              </p>
-              <p class="bar__point">
-                <span>Чай чёрный</span>
-                <i></i>
-                <b>180 руб.</b>
-              </p>
-              <p class="bar__point">
-                <span>Сок свежевыжатый</span>
-                <i></i>
-                <b>250 руб.</b>
-              </p>
-              <a href="#" class="btn bar__btn">ПОСМОТРЕТЬ МЕНЮ</a>
-            </li>
-          </ul>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 86.47" preserveAspectRatio="none" class="layers-bottom" fill="#ffdea8">
-          <use href="#shape-layers"></use>
-        </svg>
-      </div>
-    </section>
-    
-    <section class="event">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 86.44" preserveAspectRatio="none" fill="#ffdea8" class="deco">
-        <use href="#shape-mono"></use>
-      </svg>
-      <h2 class="title"><span>СОБЫТИЯ</span></h2>
-      <ul class="event__list">
-        <li class="event__item">
-          <a data-fancybox="gallery" href="img/images/standup_inst1.jpg" class="event__link">
-            <img src="img/images/standup_inst1.jpg" alt="СОБЫТИЯ">
-          </a>
-        </li>
-        <li class="event__item">
-          <a data-fancybox="gallery" href="img/images/standup_inst1.jpg" class="event__link">
-            <img src="img/images/standup_inst1.jpg" alt="СОБЫТИЯ">
-          </a>
-        </li>
-        <li class="event__item">
-          <a data-fancybox="gallery" href="img/images/standup_inst1.jpg" class="event__link">
-            <img src="img/images/standup_inst1.jpg" alt="СОБЫТИЯ">
-          </a>
-        </li>
-        <li class="event__item">
-          <a data-fancybox="gallery" href="img/images/standup_inst1.jpg" class="event__link">
-            <img src="img/images/standup_inst1.jpg" alt="СОБЫТИЯ">
-          </a>
-        </li>
-      </ul>
-    </section>
-    
-    <section class="food">
-      <div class="food__title">
-        <h2 class="title">FOOD ФОТО</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 86.47" preserveAspectRatio="none" class="layers-bottom" fill="#ffdea8">
-          <use href="#shape-layers"></use>
-        </svg>
-      </div>
-      <div class="food__wrap">
-        <ul class="food__list">
-          <li class="food__item">
-            <a data-fancybox="food" href="img/images/food1.jpg" class="food__link">
-              <img src="img/images/food1.jpg" alt="FOOD ФОТО">
-            </a>
-            <div class="food__overlay"></div>
-          </li>
-          <li class="food__item">
-            <a data-fancybox="food" href="img/images/food2.jpg" class="food__link">
-              <img src="img/images/food2.jpg" alt="FOOD ФОТО">
-            </a>
-            <div class="food__overlay"></div>
-          </li>
-          <li class="food__item">
-            <a data-fancybox="food" href="img/images/food3.jpg" class="food__link">
-              <img src="img/images/food3.jpg" alt="FOOD ФОТО">
-            </a>
-            <div class="food__overlay"></div>
-          </li>
-          <li class="food__item">
-            <a data-fancybox="food" href="img/images/food4.jpg" class="food__link">
-              <img src="img/images/food4.jpg" alt="FOOD ФОТО">
-            </a>
-            <div class="food__overlay"></div>
-          </li>
-        </ul>
-        <a href="#" class="btn food__btn">БОЛЬШЕ ФОТО</a>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 86.44" preserveAspectRatio="none" fill="#ffebc3" class="deco-bottom">
-        <use href="#shape-mono"></use>
-      </svg>
     </section>
     
     <section class="map">
-      <h2 class="title">КОНТАКТЫ</h2>
       <div class="map__img">
         <iframe src="https://yandex.com/map-widget/v1/-/CCQdZWuYSD"></iframe>
       </div>
