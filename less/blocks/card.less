@@ -108,6 +108,72 @@
       background-size: contain;
     }
   }
+  
+  &--drink {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 90%;
+      left: 50px;
+      width: 380px;
+      height: 469px;
+      background-image: url(../img/images/zyab_v_pive.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  &--crab {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      right: 110%;
+      width: 578px;
+      height: 441px;
+      background-image: url(../img/images/fish-overlay1.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  &--fish {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: -100px;
+      left: 60%;
+      width: 551px;
+      height: 638px;
+      background-image: url(../img/images/fish-overlay2.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  &--coffee {
+    width: 30%;
+  }
+  
+  &--cacao {
+    margin-left: auto;
+    margin-right: auto;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 350px;
+      height: 440px;
+      background-image: url(../img/images/fod_zyab.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
 .card__name {
