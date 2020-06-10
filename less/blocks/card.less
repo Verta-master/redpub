@@ -1,6 +1,6 @@
 .card {
   padding-top: 50px;
-  padding-bottom: 50px;
+//  padding-bottom: 50px;
   overflow: hidden;
 }
 
@@ -10,6 +10,10 @@
   margin-right: auto;
   margin-bottom: 50px;
   background-color: #ffcc66;
+}
+
+.card__block {
+  margin-bottom: 30px;
 }
 
 .card__table {
@@ -22,11 +26,12 @@
     
     td {
       vertical-align: top;
-      padding-bottom: 35px;
+      padding-bottom: 52px;
     }
     
     td:last-child {
-      width: 150px;
+//      width: 150px;
+      padding-left: 10px;
       color: #a77000;
       letter-spacing: 3.6px;
       font-size: 20px;
@@ -43,7 +48,7 @@
       content: "";
       position: absolute;
       top: -150px;
-      left: -405px;
+      left: -390px;
       width: 405px;
       height: 446px;
       background-image: url(../img/images/zyab_priv.png);
@@ -53,11 +58,13 @@
   }
   
   &--beer {
+    width: 65%;
+    
     &::after {
       content: "";
       position: absolute;
-      top: 30px;
-      left: 120%;
+      top: 50px;
+      left: 117%;
       width: 410px;
       height: 625px;
       background-image: url(../img/images/zyab_of.png);
@@ -69,6 +76,37 @@
   &--irland {
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  &--rom {
+    width: 74%;
+    margin-left: auto;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 98%;
+      width: 445px;
+      height: 357px;
+      background-image: url(../img/images/zyab_friend.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  &--wine {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 90%;
+      left: 50px;
+      width: 490px;
+      height: 567px;
+      background-image: url(../img/images/zyab_alc.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 }
 
@@ -88,10 +126,13 @@
     display: block;
     flex-grow: 1;
     margin-left: 10px;
+    
     border-bottom: 1px dashed #979797;
   }
   
   b {
+    display: block;
+    margin-top: 5px;
     width: 100%;
     font-weight: 400;
   }
@@ -101,4 +142,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.card__title {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: #784729;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
