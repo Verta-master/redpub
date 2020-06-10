@@ -1,0 +1,104 @@
+.card {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.card__download {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  background-color: #ffcc66;
+}
+
+.card__table {
+  width: 49%;
+  position: relative;
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    td {
+      vertical-align: top;
+      padding-bottom: 35px;
+    }
+    
+    td:last-child {
+      width: 150px;
+      color: #a77000;
+      letter-spacing: 3.6px;
+      font-size: 20px;
+      font-weight: 400;
+      text-align: right;
+    }
+  }
+  
+  &--business {
+    margin-left: auto;
+    margin-right: auto;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: -150px;
+      left: -405px;
+      width: 405px;
+      height: 446px;
+      background-image: url(../img/images/zyab_priv.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  &--beer {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 120%;
+      width: 410px;
+      height: 625px;
+      background-image: url(../img/images/zyab_of.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  &--irland {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.card__name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  
+  span {
+    padding-left: 10px;
+  }
+  
+  i {
+    display: block;
+    flex-grow: 1;
+    margin-left: 10px;
+    border-bottom: 1px dashed #979797;
+  }
+  
+  b {
+    width: 100%;
+    font-weight: 400;
+  }
+}
+
+.card__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

@@ -117,3 +117,75 @@ h3,
   text-align: center;
   color: #784729;
 }
+
+.title-icon {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  color: #614100;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 189px;
+    height: 9px;
+    background-image: url(../img/icons/bd-img1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  span {
+    position: relative;
+    padding-left: 70px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/icons/icon3.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  &--small span {
+    padding-left: 58px;
+    
+    &::before {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  
+  &--big span {
+    padding-left: 86px;
+    
+    &::before {
+      width: 56px;
+      height: 56px;
+    }
+  }
+  
+  &--desert span {
+    padding-left: 72px;
+    
+    &::before {
+      width: 42px;
+      height: 43px;
+      background-image: url(../img/icons/icon2.svg);
+    }
+  }
+}
+
